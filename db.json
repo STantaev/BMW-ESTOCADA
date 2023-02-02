@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "title": "lycoris recoil",
+      "price": 7865,
+      "img": "https://static.zerochan.net/Lycoris.Recoil.full.3706694.jpg",
+      "type": "action",
+      "id": 2
+    },
+    {
+      "title": "akame ga klkjhill",
+      "price": 1232345,
+      "img": "https://www.bmw-m.com/content/dam/bmw/marketBMW_M/common/fastlane/driving-experience/2022/BMW_M4_Competition-BDE-stage-02.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1674142100266.jpg",
+      "type": "fantasy",
+      "id": 3
+    },
+    {
+      "title": "monogatari",
+      "price": 11123453,
+      "img": "https://www.bmw-m.com/content/dam/bmw/marketBMW_M/common/fastlane/driving-experience/2022/BMW_M4_Competition-BDE-stage-02.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1674142100266.jpg",
+      "type": "daily",
+      "id": 4
+    },
+    {
+      "title": "shinobu oshino",
+      "price": 8882345,
+      "img": "https://www.bmw-m.com/content/dam/bmw/marketBMW_M/common/fastlane/driving-experience/2022/BMW_M4_Competition-BDE-stage-02.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1674142100266.jpg",
+      "type": "daily",
+      "id": 5
+    },
+    {
+      "title": "demon slayer",
+      "price": 142342,
+      "img": "https://www.bmw-m.com/content/dam/bmw/marketBMW_M/common/fastlane/driving-experience/2022/BMW_M4_Competition-BDE-stage-02.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1674142100266.jpg",
+      "type": "fantasy",
+      "id": 6
+    },
+    {
+      "title": "melancholy of haruhi",
+      "price": 1,
+      "img": "https://www.bmw-m.com/content/dam/bmw/marketBMW_M/common/fastlane/driving-experience/2022/BMW_M4_Competition-BDE-stage-02.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1674142100266.jpg",
+      "type": "daily",
+      "id": 7
+    },
+    {
+      "title": "Shisui",
+      "price": 11234,
+      "img": "https://www.bmw-m.com/content/dam/bmw/marketBMW_M/common/fastlane/driving-experience/2022/BMW_M4_Competition-BDE-stage-02.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1674142100266.jpg",
+      "type": "fantasy",
+      "id": 8
+    }
+  ]
+}
