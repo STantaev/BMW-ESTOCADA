@@ -44,7 +44,7 @@ const ProductList = () => {
 
   function currentData() {
     const begin = (page - 1) * 3;
-    const end = begin + 5;
+    const end = begin + 6;
     return products.slice(begin, end);
   }
 
@@ -54,14 +54,15 @@ const ProductList = () => {
         <Grid container spacing={3}>
           <Grid
             item
-            sx={{ justifyContent: "center", display: "flex", flexWrap: "wrap" }}
+            sx={{ justifyContent: "center", display: "flex", flexWrap: "wrap", }}
             md={9}
           >
             <Box
               sx={{
+                background: "yellow",
                 display: "flex",
                 flexWrap: "wrap",
-                minHeight: "40vh",
+                minHeight: "4vh",
                 mb: "3.5vh",
               }}
             >
@@ -75,7 +76,7 @@ const ProductList = () => {
             </Box>
           </Grid>
           <Grid item md={3}>
-            <Paper>
+            <Paper sx={{background: "#4e4c4c"}}>
               <TextField
                 id="input-with-icon-textfield"
                 label="Search..."
@@ -101,23 +102,49 @@ const ProductList = () => {
                   <FormControlLabel
                     value="all"
                     control={<Radio />}
-                    label="all"
+                    label="All Cars"
                   />
 
                   <FormControlLabel
-                    value="daily"
+                    value="BMW 2 SERIES"
                     control={<Radio />}
-                    label="daily"
+                    label="BMW 2 SERIES"
                   />
                   <FormControlLabel
-                    value="action"
+                  sx={{fonFamily: 'Bungee Inline', }}
+                    value="BMW 3 SERIES"
                     control={<Radio />}
-                    label="action"
+                    label="BMW 3 SERIES"
                   />
                   <FormControlLabel
-                    value="fantasy"
+                  sx={{fonFamily: 'Bungee Inline', }}
+                    value="BMW 4 SERIES"
                     control={<Radio />}
-                    label="fantasy"
+                    label="BMW 4 SERIES"
+                  />
+                  <FormControlLabel
+                  sx={{fonFamily: 'Bungee Inline',}}
+                    value="BMW 5 SERIES"
+                    control={<Radio />}
+                    label="BMW SERIES"
+                  />
+                   <FormControlLabel
+                  sx={{fonFamily: 'Bungee Inline',}}
+                    value="BMW X5 SERIES"
+                    control={<Radio />}
+                    label="BMW X5 SERIES"
+                  />
+                    <FormControlLabel
+                  sx={{fonFamily: 'Bungee Inline',}}
+                    value="BMW X6 SERIES"
+                    control={<Radio />}
+                    label="BMW X6 SERIES"
+                  />
+                     <FormControlLabel
+                  sx={{fonFamily: 'Bungee Inline',}}
+                    value="BMW CS"
+                    control={<Radio />}
+                    label="BMW CS"
                   />
                 </RadioGroup>
               </FormControl>

@@ -25,6 +25,7 @@ const MainRoutes = () => {
     { link: "/contactus", element: <ContactUsPage />, id: 6 },
     { link: "/aboutus", element: <AboutUsPage />, id: 7 },
     { link: "/cart", element: <CartPage />, id: 8 },
+    // { link: "/crud", element: <Crud />, id: 9}
   ];
 
   const PRIVATE_ROUTES = [
@@ -50,7 +51,7 @@ const MainRoutes = () => {
               <Route
                 path={item.link}
                 element={
-                  user.email === "admin@admin.com" ? (
+                  user.email === "sultan_tantaev@mail.ru" ? (
                     item.element
                   ) : (
                     <Navigate replace to="*" />

@@ -1,20 +1,16 @@
-body {
-  height: 1500px;
-}
-
-.bmw {
-  color: #0f1116;
-}
 .about-text {
   width: 750px;
   padding-bottom: 20px;
   color: rgb(rgb(210, 210, 210));
+  font-family: 'Merriweather', serif;
+ 
 }
 .about-heading {
   padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #0f1116;
 }
 .block {
   width: 1600px;
@@ -27,15 +23,8 @@ body {
 }
 .cont {
   position: relative;
+  color: #000;
 }
-
-.foooter {
-  width: 400vw;
-  position: absolute;
-  bottom: 0;
-  background-color: #0f1116;
-  margin-top: 60px;
-} 
 
 .svyaz {
   color: #fff;
@@ -55,5 +44,6 @@ body {
 
 /* .headerr { */
   /* position: absolute; */
-  /* top: 0; */
+  /* top: center; */
+  /* margin: center; */
 /* }  */

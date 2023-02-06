@@ -27,10 +27,10 @@ const ProductDetails = () => {
     <Container>
       <Breadcrumbs aria-label="breadcrumb" mt="20px">
         <Link underline="hover" color="inherit" to="/">
-          home
+          HOME
         </Link>
         <Link underline="hover" color="inherit" to="/products">
-          products
+          PRODUCTS
         </Link>
         <Typography color="text.primary">{productDetails.id}</Typography>
       </Breadcrumbs>
@@ -47,7 +47,7 @@ const ProductDetails = () => {
           p="23px"
           // boxShadow="10px 10px 10px black"
         >
-          {/* <img width="100%" objectFit="cover" src={productDetails.img} /> */}
+          <img width="100%" objectFit="cover" src={productDetails.img} />
         </Grid>
         <Grid md={6} p="20px">
           <Stack spacing={5}>
@@ -55,19 +55,19 @@ const ProductDetails = () => {
               <Divider>
                 <Chip label="TITLE" />
               </Divider>
-              {/* <Typography variant="h4">{productDetails.title}</Typography> */}
+              <Typography variant="h4">{productDetails.title}</Typography>
             </Paper>
             <Paper p="20px">
               <Divider>
                 <Chip label="TYPE" />
               </Divider>
-              {/* <Typography variant="h5">{productDetails.type}</Typography> */}
+              <Typography variant="h5">{productDetails.type}</Typography>
             </Paper>
             <Paper p="20px">
               <Divider>
                 <Chip label="PRICE" />
               </Divider>
-              {/* <Typography variant="h6">{productDetails.price}</Typography> */}
+              <Typography variant="h6">{productDetails.price}</Typography>
             </Paper>
 
             <Grid>

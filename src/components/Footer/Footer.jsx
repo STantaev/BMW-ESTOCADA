@@ -33,16 +33,15 @@ const Footer = () => {
   const socialMedias = [
     { name: "INSTAGRAM", link: "*", id: 1 },
     { name: "FACEBOOK", link: "*", id: 2 },
-    { name: "YOUTUBE", link: "*", id: 3 },
+    { name: "YOUTUBE", link: "https://www.youtube.com/watch?v=XWePdlCGTno", id: 3 },
   ];
   return (
-    <footer className={'fonts'}
+    <footer className={'footer'}
      style={{background: "white",}}>
       <Box
-      className={'fonts'}
-        // className="footer"
+        className="footer"
         sx={{
-          bgcolor: "black",
+          bgcolor: "#6d253f",
           mt: "30px",
           minHeight: "250px",
           width: "100%",
@@ -70,14 +69,14 @@ const Footer = () => {
             <Box>
               {user.email ? (
                 <Button
-                  sx={{ color: "#ffffffb3", fontWeight: "brave" }}
+                  sx={{ color: "#ffffffb3", fontWeight: "brave", fontFamily: "Bungee Spice, cursive"}}
                   onClick={handleLogOut}
                 >
                   LOGOUT
                 </Button>
               ) : (
                 <NavLink to="/auth">
-                  <Button sx={{ color: "black", fontWeight: "bold", }}>
+                  <Button sx={{ color: "black", fontWeight: "bold", fontFamily: "Bungee Spice, cursive", }}>
                     LOGIN
                   </Button>
                 </NavLink>
@@ -97,7 +96,7 @@ const Footer = () => {
             }}
           >
             <Grid sx={{ width: "200px" }}>
-              <Typography variant="h6" sx={{color: "yellow"}}>PAGES</Typography>
+              <Typography variant="h6"  sx={{color: "yellow", fontFamily: "Bungee Spice, cursive"}}>PAGES</Typography>
 
               {pages.map((page) => (
                 <NavLink to={page.link}>
@@ -109,6 +108,7 @@ const Footer = () => {
                       color: "black",
                       display: "block",
                       mb: "5px",
+                      fontFamily: "Bungee Spice"
                     }}
                   >
                     {page.name}
@@ -117,7 +117,7 @@ const Footer = () => {
               ))}
             </Grid>
             <Grid sx={{ width: "200px" }}>
-              <Typography variant="h6" sx={{color: "yellow"}}>SOCIAL MEDIAS</Typography>
+              <Typography variant="h6" sx={{color: "yellow", fontFamily: "Bungee Spice, cursive",}}>SOCIAL MEDIAS</Typography>
               {socialMedias.map((item) => (
                 <NavLink to={item.link}>
                   <Typography
@@ -128,6 +128,7 @@ const Footer = () => {
                       color: "black",
                       display: "block",
                       mb: "5px",
+                      fontFamily: "Bungee Spice, cursive",
                     }}
                   >
                     {item.name}
@@ -136,7 +137,7 @@ const Footer = () => {
               ))}
             </Grid>
             <Grid sx={{ width: "200px" }}>
-              <Typography variant="h6" sx={{color: "yellow"}}>BMW CENTER</Typography>
+              <Typography variant="h6" sx={{color: "yellow",fontFamily: "Bungee Spice, cursive",}}>BMW CENTER</Typography>
               <Typography
                 variant="body2"
                 sx={{

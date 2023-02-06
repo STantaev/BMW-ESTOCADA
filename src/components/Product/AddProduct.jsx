@@ -7,8 +7,8 @@ const AddProduct = () => {
   const [product, setProduct] = useState({
     title: "",
     price: 0,
-    img: "https://www.bmw-m.com/content/dam/bmw/marketBMW_M/common/fastlane/driving-experience/2022/BMW_M4_Competition-BDE-stage-02.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1674142100266.jpg",
-    type: "",
+    img: "",
+    type: "1",
   });
 
   const handleChange = (e) => {

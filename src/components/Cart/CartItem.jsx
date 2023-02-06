@@ -12,47 +12,48 @@ const CartItem = ({ item }) => {
         <Box
           component="img"
           sx={{
-            height: 50,
-            width: 50,
+            height:150,
+            width: 270,
           }}
           src={item.item.img}
           alt={item.item.title}
         />
       </Grid>
       <Grid item>
-        <Typography gutterBottom variant="p" component="div">
+        <Typography gutterBottom variant="h6" component="div">
           {item.item.title}
         </Typography>
       </Grid>
       <Grid item>
-        <Typography gutterBottom variant="p" component="div">
+        <Typography gutterBottom variant="h6" component="div">
           {item.item.type}
         </Typography>
       </Grid>
       <Grid item>
-        <Typography variant="p" color="text.secondary">
+        <Typography variant="h6" color="text.secondary">
           Price: {item.item.price}
         </Typography>
       </Grid>
       <Grid item>
-        <Typography variant="p" color="text.secondary">
+        <Typography variant="h6" color="text.secondary">
           Quantity:{" "}
           <input
             type="number"
             value={item.count}
             onChange={(e) => changeProductCount(e.target.value, item.item.id)}
-            min={1}
+            min={24}
             max={100}
           ></input>
         </Typography>
       </Grid>
       <Grid item>
-        <Typography variant="p" color="text.secondary">
+        <Typography variant="h6" color="text.secondary">
           SubPrice: {item.subPrice}
         </Typography>
       </Grid>
       <Grid item>
         <Button
+        sx={{background:"red" ,color: "black"}}
           variant="outlined"
           size="small"
           onClick={() => deleteCartProduct(item.item.id)}

@@ -14,7 +14,7 @@ const Cart = () => {
 
   return (
     <>
-      <h1>My Cart</h1>
+      <h1>Корзина</h1>
       <Container>
         {cart?.products.map((cartItem) => {
           {
@@ -24,7 +24,7 @@ const Cart = () => {
       </Container>
       <Container>
         <Button variant="outlined" onClick={clearCart}>
-          BUY
+          Купить
         </Button>
         <Typography fontSize={21}>Total Price :{cart?.totalPrice}</Typography>
       </Container>

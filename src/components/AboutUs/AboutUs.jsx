@@ -17,53 +17,63 @@ const AboutUs = () => {
       <header className="headerr">
         <UncontrolledExample />
       </header>
-      {/* <div className="block"></div> */}
-      <Container className="cont" sx={{ mt: 10 }}>
-        <Typography variant="h2" component="h2" sx={{ color: "white", mb: 5 }}>
-          BMW
+      <Container className="cont" sx={{ mt: 10, fontFamily: "Merriweather" }}>
+        <Typography
+          variant="h6"
+          component="h6"
+          sx={{ color: "white", mb: 5, fontFamily: "Merriweather" }}
+        > 
+          История бренда BMW: как всё начиналось Немецкие автомобили
+          пользуются высоким спросом благодаря надежности и функциональности.
+          Одной из самых популярных является марка BMW, модели которой давно
+          стали символом роскоши и спортивного стиля. Сейчас баварская компания
+          представляет гигантский концерн с множеством автомобильных заводов не
+          только в Германии, но и в других странах мира: от США до Египта.
+          Производятся BMW и в России — их сборкой занимается калининградское
+          предприятие «Автотор». Эта статья посвящена истории создания и
+          развития BMW, которая насчитывает свыше 100 лет и, безусловно, будет
+          интересна настоящим поклонникам бренда. Как создавалась компания
+          История BMW начиналась в баварском Мюнхене, где в 1913 году немецкие
+          промышленники Рапп и Отто открыли два небольших предприятия. Новые
+          фирмы занимались производством авиационных моторов, и их руководители
+          вскоре приняли решение объединиться, чтобы вместе выдержать жесткую
+          рыночную конкуренцию. Совместная компания получила название Bayerische
+          Flugzeugwerke — «Баварские авиационные заводы». Зигзаг судьбы Осенью
+          1917 года была создана эмблема БМВ, которая осталась неизменной до
+          настоящего времени: круг, разделенный на четыре части (две белых и две
+          голубых). Эти цвета считаются традиционно баварскими. Долгое время
+          считалось, что рисунок символизировал пропеллер самолета на фоне
+          ясного неба. Скорее всего, компания пошла бы по изначально
+          определенному пути, занимаясь созданием авиамоторов, и автомобилисты
+          никогда не узнали даже ее названия. Но история распорядилась иначе.
+          После капитуляции Германии в Первой мировой войне правительство страны
+          подписало Версальский договор, одним из пунктов которого стал запрет
+          на производство самолетов. Чтобы сохранить фирму, основатели
+          перепрофилировали производство и несколько изменили название: слово
+          Flugzeug («авиационные») уступило место Motorische («моторные»), а
+          аббревиатура приобрела современный вид, хорошо известный поклонникам.
+          Мотоциклы BMW После перестройки производства компания BMW некоторое
+          время занималась выпуском тормозов для железнодорожного транспорта. В
+          1923 году предприятие переключилось на мотоциклы, да так успешно, что
+          в считаные месяцы обрело мировую известность. Надежность и скоростные
+          качества баварской мотоциклетной техники снискали ей славу среди
+          гонщиков. В 1928 году, после покупки заводов в Тюрингии, руководство
+          сделало основной сферой деятельности автомобильное производство, но
+          выпуск мотоциклов не прекратился и по сей день. Спортивные модели
+          очень популярны и нередко встречаются на дорогах разных стран.
+          Малолитражки BMW
         </Typography>
         <Box
           style={{
             backgroundImage:
-              "url(https://www.bmw-m.com/content/dam/bmw/marketBMW_M/common/topics/magazine-article-pool/2022/3-0-csl-design/bmw-3-0-csl-design-01-stage-teaser.png/jcr:content/renditions/cq5dam.resized.img.1680.large.time1671027898589.png)",
+              "url(https://img1.akspic.ru/crops/3/7/8/6/2/126873/126873-bmv_m6_2018-lichnyj_roskoshnyj_avtomobil-kuzov_kupe-avto-bmw-1920x1080.jpg)",
+            backgroundSize: "cover",
+            height: 700,
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
           }}
         >
-          <div className="about-heading">
-            <h2>Who we are</h2>
-            <Typography variant="h6" component="p" className="about-text">
-              Heckler & Koch GmbH is a German defense manufacturing company that
-              manufactures handguns, rifles, submachine guns, and grenade
-              launchers. The company is located in Oberndorf am Neckar in the
-              German state of Baden-Württemberg, and also has subsidiaries in
-              the United Kingdom, France and the United States.
-            </Typography>
-          </div>
-          <div className="about-heading">
-            <h2>Who we are</h2>
-            <Typography variant="h6" component="p" className="about-text">
-              Heckler & Koch GmbH is a German defense manufacturing company that
-              manufactures handguns, rifles, submachine guns, and grenade
-              launchers. The company is located in Oberndorf am Neckar in the
-              German state of Baden-Württemberg, and also has subsidiaries in
-              the United Kingdom, France and the United States.
-            </Typography>
-          </div>
-          <Grid sx={{ my: 7 }} container spacing={0}>
-            <Grid item xs>
-              <p>'50 years on the market'</p>
-            </Grid>
-            <Grid item xs>
-              <p>'1000000 sells'</p>
-            </Grid>
-            <Grid item xs>
-              <p>'guarantee'</p>
-            </Grid>
-          </Grid>
-          <div className="about-heading">
-            <h2>What we sell</h2>
-            <Typography variant="h6" component="p" className="about-text">
-            </Typography>
-          </div>
         </Box>
         <React.Fragment>
           <GlobalStyles
@@ -75,31 +85,68 @@ const AboutUs = () => {
           />
         </React.Fragment>
       </Container>
-      {/* <Box
-        sx={{ width: "500", height: "200", backgroundColor: "primary.dark" }}
-      ></Box> */}
-      {/* <footer className="foooter">
-        <div>
-          <div>
-            <div className="svyaz">Связаться с нами</div>
+      <Container className="cont" sx={{ mt: 10, fontFamily: "Merriweather" }}>
+        <Typography
+          variant="h2"
+          component="h2"
+          sx={{ mb: 5, fontFamily: "Merriweather" }}
+        >
+          <Box sx={{ color: "#423414", mb: 5, fontFamily: "Merriweather" }}>
+            За более чем вековую историю BMW представила около 100 моделей.
+            Многие из них уже давно сошли с конвейера и заняли свои места в
+            выставочных залах музея BMW Welt. Сегодня мы освежим в памяти
+            историю BMW и посмотрим на ваши самые любимые модели, которые носили
+            эмблему Bayerische Motoren Werke.
+          </Box>
+        </Typography>
+        <Box
+          style={{
+            backgroundImage:
+              "url(https://img2.akspic.ru/crops/7/7/8/6/2/126877/126877-bmw_m3-bmw_3_series_e30-sportivnyj_avtomobil-klassicheskij_avtomobil-avtomobil-1920x1080.jpg)",
+            backgroundSize: "cover",
+            height: 700,
+            width: "100%",
+            justifyContent: "center",
+          }}
+        >
+          <div className="about-heading">
+            <h2>OLD SCHOOL BMW</h2>
+            <Typography variant="h6" component="p" className="about-text">
+              BMW 5 СЕРИИ (E12) Мощный старт Сегодня BMW 5 серии остается одним
+              из самых популярных в модельном ряду. И задатки для такого успеха
+              были заложены уже в 1972 году. Первое поколение BMW 5 серии пришло
+              на замену «Новому классу». За дизайн BMW E12 отвечал известный
+              дизайнер Поль Брак. Именно под его присмотром из салона убрали все
+              лишнее в угоду функциональности, а в экстерьере появился
+              узнаваемый передний силуэт с четырьмя фарами. Кроме того, BMW E12
+              стал первым автомобилем, который получил «заряженную» M-версию.
+            </Typography>
           </div>
-          <div className="thre">
-            <a className="aaa" href="tel:777777777">
-              777777777
-            </a>
-            <a className="aaa" href="https://www.instagram.com/ular_bishkek_/">
-              <img src="https://www.instagram.com/akvalend_kg/" alt="" />
-              ⠀Instagram
-            </a>
-            <a className="aaa" href="ул. Льва Толстого, Бишкек">
-              Адрес
-            </a>
-          </div>
-        </div>
-      </footer> */}
+
+          <Grid sx={{ my: 7 }} container spacing={0}>
+            <Grid item xs>
+              <p>Икона.</p>
+            </Grid>
+            <Grid item xs>
+              <p>Легенда.</p>
+            </Grid>
+            <Grid item xs>
+              <p>Мечта.</p>
+            </Grid>
+          </Grid>
+        </Box>
+        <React.Fragment>
+          <GlobalStyles
+            styles={{
+              h1: { color: "red" },
+              p: { color: "white" },
+              h2: { color: "white" },
+            }}
+          />
+        </React.Fragment>
+      </Container>
     </div>
   );
 };
 
 export default AboutUs;
-// https://cdn.wallpapersafari.com/5/17/XZ9ulU.jpg

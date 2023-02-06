@@ -15,8 +15,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import Badge from "@mui/material/Badge";
 import { Link, NavLink } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContextProvider";
-
-import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
+import LocalMallIcon from '@mui/icons-material/LocalMall';
 import { useCart } from "../../contexts/CartContextProvider";
 import { Grid } from "@mui/material";
 import logo from "./Logo1.png";
@@ -46,9 +45,11 @@ const Navbar = () => {
   };
 
   const pages = [
-    { name: "ABOUT US", link: "/aboutus", id: 1 },
-    { name: "CONTACT US", link: "/contactus", id: 2 },
-    { name: "PRODUCTS", link: "/products", id: 3 },
+    { name: "HOME", link: "/", id: 1 },
+    { name: "ABOUT", link: "/aboutus", id: 2 },
+    { name: "CONTACT", link: "/contactus", id: 3 },
+    { name: "MODELS", link: "/products", id: 4 },
+   
   ];
 
   const { user, handleLogOut } = useAuth();
@@ -56,8 +57,6 @@ const Navbar = () => {
   return (
     <div>
       <AppBar position="static" elevation={3}>
-  {/* background-color: #6d253f; */}
-  {/* background-color: #6d253f; */}
         <Container maxWidth="xll" sx={{ background: "#6d253f" }}>
           <Toolbar disableGutters>
             <Typography variant="h6" noWrap component="div" sx={{ mr: 2 }}>
@@ -80,7 +79,7 @@ const Navbar = () => {
                 anchorOrigin={{
                   vertical: "bottom",
                   horizontal: "left",
-                  color: "green",
+                  color: "black",
                 }}
                 keepMounted
                 transformOrigin={{
@@ -106,9 +105,10 @@ const Navbar = () => {
                           sx={{
                             ml: "auto",
                             my: 1,
-                            color: "#ffffffb3",
+                            // color: "#ffffffb3",
                             display: "block",
                             fontSize: "15px",
+                            fontFamily: "'Bungee Inline', cursive",
                           }}
                         >
                           {page.name}
@@ -116,7 +116,7 @@ const Navbar = () => {
                       </NavLink>
                     </MenuItem>
                   ))}
-                  {user.email === "admin@admin.com" ? (
+                  {user.email === "sultan_tantaev@mail.ru" ? (
                     <MenuItem>
                       <NavLink
                         to="/admin"
@@ -132,7 +132,7 @@ const Navbar = () => {
                             my: 2,
                             color: "#ffffffb3",
                             display: "block",
-                           
+                            fontFamily: "'Bungee Spice', cursive",
                           }}
                         >
                           ADMIN
@@ -149,10 +149,10 @@ const Navbar = () => {
                             color: "black",
                             display: "block",
                             color: "black",
+                            fontFamily: "'Bungee Spice', cursive",
                           }}
                         >
-                          CART
-                          
+                          Корзина
                         </Typography>
                       </Link>
                     </MenuItem>
@@ -164,7 +164,11 @@ const Navbar = () => {
               variant="h6"
               noWrap
               component="div"
-              sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+              sx={{
+                flexGrow: 1,
+                fontFamily: "'Bungee Spice', cursive",
+                display: { xs: "flex", md: "none" },
+              }}
             >
               <img
                 id="logo"
@@ -177,6 +181,7 @@ const Navbar = () => {
                 justifyContent: "center",
                 flexGrow: 1,
                 display: { xs: "none", md: "flex" },
+                fontFamily: "'Bungee Spice', cursive",
               }}
             >
               {pages.map((page) => (
@@ -187,6 +192,7 @@ const Navbar = () => {
                       textDecoration: "none",
                       color: "#ffffffb3",
                       fontSize: "15px",
+                      fontFamily: "Bungee Spice, cursive",
                     }}
                   >
                     <Typography
@@ -196,6 +202,7 @@ const Navbar = () => {
                         color: "#ffffffb3",
                         display: "block",
                         fontSize: "15px",
+                        fontFamily: "Bungee Spice, cursive",
                       }}
                     >
                       {page.name}
@@ -218,7 +225,7 @@ const Navbar = () => {
                         ml: "auto",
                         my: 2,
                         color: "#ffffffb3",
-
+                        fontFamily: "Bungee Spice, cursive",
                         display: "block",
                       }}
                     >
@@ -235,16 +242,12 @@ const Navbar = () => {
                         my: 2,
                         color: "black",
                         display: "block",
+                        fontFamily: "Bungee Spice, cursive",
                       }}
                     >
                       CART
                     </Typography>
                   </Link>
-                  {/* <IconButton>
-                    <Badge badgeContent={localStorage.length} color="error">
-                      <ShoppingCartIcon />
-                    </Badge>
-                  </IconButton> */}
                 </MenuItem>
               )}
               {/* // -------------------------------------------------------------------- */}
@@ -256,7 +259,11 @@ const Navbar = () => {
                   <Grid container alignItems="center">
                     <Grid item>
                       <Button
-                        sx={{ color: "white", fontWeight: "bold" }}
+                        sx={{
+                          color: "white",
+                          fontWeight: "bold",
+                          fontFamily: "Bungee Spice, cursive;",
+                        }}
                         onClick={handleLogOut}
                       >
                         LOGOUT
@@ -278,19 +285,15 @@ const Navbar = () => {
                         <Typography
                           sx={{
                             color: "white",
+                            fontFamily: "Bungee Spice, cursive",
                           }}
                         >
                           {totalQuantity}
                         </Typography>
                         <NavLink to="/cart">
-                          {/* <Badge
-                            badgeContent={cart.products.length}
-                            color="primary"
-                          > */}
-                          <IconButton sx={{ color: "#ffffffb3" }}>
-                            <ShoppingBasketIcon />
-                          </IconButton>
-                          {/* </Badge> */}
+                            <IconButton sx={{ color: "#121212" }}>
+                              <LocalMallIcon />
+                            </IconButton>
                         </NavLink>
                       </MenuItem>
                     </Grid>
@@ -306,7 +309,9 @@ const Navbar = () => {
                         <Button
                           sx={{
                             color: "#ffffffb3",
+                            fontFamily: "Bungee Spice, cursive",
                             fontWeight: "bold",
+                            // fontFami
                           }}
                         >
                           LOGIN

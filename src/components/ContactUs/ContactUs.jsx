@@ -21,14 +21,13 @@ import SettingsPhoneIcon from "@mui/icons-material/SettingsPhone";
 import EmailIcon from "@mui/icons-material/Email";
 import { ClassNames } from "@emotion/react";
 import { dark } from "@mui/material/styles/createPalette";
+import "./Contact.css";
 
 const ContactUs = () => {
   return (
     <Grid container mt={5}>
-      <Grid item xs={12} backgroundColor={"orange"}>
-        
-        <Box width={700} backgroundColor={"blue"}>
-          
+      <Grid item xs={12} backgroundColor={""}>
+        <Box width={700} backgroundColor={"#543243"}>
           <Typography
             textAlign={"start"}
             pl={15}
@@ -37,8 +36,7 @@ const ContactUs = () => {
             mb={2}
             fontFamily={"sans-serif"}
           >
-            
-            Connect With Us
+            {/* Connect With Us */}
           </Typography>
           <Typography
             variant="subtitle1"
@@ -50,8 +48,8 @@ const ContactUs = () => {
             pr={5}
             lineHeight={1.5}
           >
-            We would love to respond to your queries and help you succeed . Feel
-            free to get in touch with us
+            {/* We would love to respond to your queries and help you succeed . Feel
+            free to get in touch with us */}
           </Typography>
         </Box>
       </Grid>
@@ -75,7 +73,7 @@ const ContactUs = () => {
           <Box
             sx={{
               width: 800,
-              backgroundColor: "brown",
+              backgroundColor: "white",
               pl: 5,
             }}
           >
@@ -90,11 +88,9 @@ const ContactUs = () => {
             </Typography>
 
             <Grid container mt={3}>
-              {/* backgroundColor={"pink"} */}
               <Grid
                 item
                 xs={6}
-                // backgroundColor={"silver"}
                 display={"flex"}
                 flexDirection={"column"}
                 rowGap={2.7}
@@ -136,7 +132,7 @@ const ContactUs = () => {
               <Grid item xs={12} mt={3}>
                 <Button
                   variant="contained"
-                  sx={{ backgroundColor: "#111444", color: "white" }}
+                  sx={{ backgroundColor: "black", color: "white" }}
                   endIcon={<SendIcon />}
                 >
                   Send Message
@@ -148,7 +144,7 @@ const ContactUs = () => {
           <Box
             sx={{
               width: 400,
-              backgroundColor: "#141414",
+              backgroundColor: "white",
               pl: 5,
             }}
           >
@@ -179,7 +175,7 @@ const ContactUs = () => {
                   component={"th"}
                   scope={"row"}
                 >
-                  <Typography mb={1}>bmw</Typography>
+                  <Typography mb={1}>bmw.kg</Typography>
                 </TableCell>
               </TableRow>
 
@@ -217,7 +213,7 @@ const ContactUs = () => {
                   component={"th"}
                   scope={"row"}
                 >
-                  <Typography>Tabyshalieva 29</Typography>
+                  <Typography>ул.Абдрахманова, 327</Typography>
                 </TableCell>
               </TableRow>
             </TableContainer>

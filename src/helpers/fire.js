@@ -3,14 +3,17 @@ import "firebase/compat/app";
 import "firebase/compat/auth";
 
 const firebaseConfig = {
-
-  apiKey: "AIzaSyC3wGne71VHvXPHDjwwA4R06cbI8ys1rmI",
-  authDomain: "BMW-ESTOCADA.firebaseapp.com",
-  projectId: "BMW-ESTOCADA",
-  storageBucket: "BMW-ESTOCADA.appspot.com",
-  messagingSenderId: "150776353519",
-  appId: "1:150776353519:web:749b5860e0f3257c18c11a",
+  apiKey: "AIzaSyC7MJQ2i0ozwxW2lVvVu_b0Y37FoNw4rpo",
+  authDomain: "bmw-estocada.firebaseapp.com",
+  projectId: "bmw-estocada",
+  storageBucket: "bmw-estocada.appspot.com",
+  messagingSenderId: "1038991942217",
+  appId: "1:1038991942217:web:f74c9ac3e74181001ed598"
 };
+
+
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
 
 const fire = firebase.initializeApp(firebaseConfig);
 

@@ -1,11 +1,20 @@
-@font-face {
+/* @font-face {
   font-family: black;
   src: url(../src/components/assets/fonts/MajorMonoDisplay-Regular.ttf) format('ttf');
+} */
+
+#root {
+  /* background-color: #aaf06c; */
+  background-color: hsla(74, 90%, 39%, 0.66);
 }
 
 .App {
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace, 'Cinzel Decorative', cursive;
+}
+
+#root{
+  font-family: 'Courier New', Courier, monospace, 'Cinzel Decorative', cursive; 
 }
 
 .App-logo {

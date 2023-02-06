@@ -30,7 +30,7 @@ const ProductCard = ({ item }) => {
         alt={item.title}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" >
           {item.title}
         </Typography>
         <Typography gutterBottom variant="h5" component="div">
@@ -45,7 +45,7 @@ const ProductCard = ({ item }) => {
           <Button size="small" onClick={() => deleteProduct(item.id)}>
             Delete
           </Button>
-          <Button size="small" onClick={() => navigate(`/edit/${item.id}`)}>
+          <Button sx={{fonFamily: 'Merriweather'}} size="small" onClick={() => navigate(`/edit/${item.id}`)}>
             Edit
           </Button>
         </CardActions>
@@ -57,10 +57,11 @@ const ProductCard = ({ item }) => {
             />
           </IconButton>
           <Button
+            sx={{fonFamily: 'Merriweather'}}
             onClick={() => navigate(`/products/${item.id}`)}
             color="error"
           >
-            DETAILS
+            
           </Button>
         </CardActions>
       )}
